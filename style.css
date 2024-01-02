@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:ital,wght@1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* background-color: #0e1428; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --yellow-color: #f0a202;
+    --second-color: #f18805;
+    --bg-color: #0e1428;
+}
+
+::selection {
+    background-color: var(--yellow-color);
+    color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--yellow-color);
+    border-radius: 1.875rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 3.75rem;
+    padding: 0 3.75rem;
+}
+
+.btn {
+    background-color: var(--yellow-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.9375rem 1.5625rem;
+    border-radius: 3.125rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+}
+
+.btn i {
+    font-size: 1.5625rem;
+}
+
+.btn:hover {
+    background-color: var(--second-color);
+}
+
+section {
+    width: 100%;
+    height: auto;
+    padding: 2.8125rem 0 4.6875rem 0;
+}
+
+section_title {
+    font-family: 'Dacing Script', cursive;
+    font-size: 2.5rem;
+    padding-bottom: 0.3125rem;
+    text-align: center;
+    margin-bottom: 4.375rem;
+}
+
+.img_fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    z-index: 100;
+}
+
+header.active {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 1.125rem;
+    transition: .3s;
+}
+
+.menu li a.active,
+.menu li a:hover {
+    color: var(--yellow-color);
+}
+
+nav .close_icon {
+    display: none;
+    font-size: 2.5rem;
+}
+
+nav .toggle_icon {
+    display: none;
+    font-size: 2.5rem;
+}
+
+/* hero section*/
+
+.hero {
+    background: url('./image/img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 11.25rem;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero_container {
+    margin: 0 !important;
+}
+
+.hero_content-item {
+    padding-right: 0.625rem;
+}
+
+.hero_content-item h1 {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+.hero_content-item h1 span {
+    color: wheat;
+}
+
+.hero_content-item p {
+    color: #fff;
+    font-size: 0.9375rem;
+    margin: 1.5625rem 0;
+    line-height: 1.6;
+}
+
+.hero_content-item .btn {
+    padding: 0.9375rem 2.5rem;
+}
+
+.swiper-container {
+    margin: 0 3.75rem;
+}
+
+.swiper-pagination {
+    position: absolute;
+    left: 0 !important;
+    padding-left: 8.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 1;
+    width: 0.8125rem !important;
+    height: 0.8125rem !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--yellow-color) !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
