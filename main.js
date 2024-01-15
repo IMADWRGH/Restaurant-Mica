@@ -11,3 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+//////////
+let header = document.querySelector('header');
+
+function scrollHeader() {
+    let scrollY = window.screenY;
+    if (scrollY > 30) {
+        header.classList.add('activ');
+    } else {
+        header.classList.remove('active');
+    }
+}
+
+window.addEventListener('scroll', scrollHeader);
