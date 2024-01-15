@@ -177,12 +177,13 @@ nav .toggle_icon {
 
 .hero_content-item {
     padding-right: 0.625rem;
+    margin: 4rem;
 }
 
 .hero_content-item h1 {
     color: #fff;
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .hero_content-item h1 span {
@@ -191,7 +192,7 @@ nav .toggle_icon {
 
 .hero_content-item p {
     color: #fff;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     margin: 1.5625rem 0;
     line-height: 1.6;
 }
