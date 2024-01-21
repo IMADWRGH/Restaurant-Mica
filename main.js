@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //////////
 let header = document.querySelector('header');
-
+let scrollY = 0;
 function scrollHeader() {
-    let scrollY = window.screenY;
+
+    scrollY = window.scrollY;
     if (scrollY > 30) {
-        header.classList.add('activ');
+        header.classList.add('active');
     } else {
         header.classList.remove('active');
     }
