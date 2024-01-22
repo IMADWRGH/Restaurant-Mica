@@ -293,3 +293,29 @@ nav .toggle_icon {
 .offer_content .off b {
     font-size: 40px;
 }
+
+/* food */
+.food ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {}
+
+.filter {}
+
+.food_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.food_item {}
+
+.food_imgBox {}
+
+.food_content {}
+
+.food_footer {}
