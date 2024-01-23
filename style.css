@@ -20,7 +20,7 @@ html {
 :root {
     --yellow-color: #f0a202;
     --second-color: #f18805;
-    --bg-color: #0e1428;
+    --bg-color: #293660;
 }
 
 ::selection {
@@ -300,7 +300,25 @@ nav .toggle_icon {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+
 }
+
+.food ul li {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.food ul li.active {
+    background-color: var(--bg-color);
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #fff;
+}
+
 
 .title {}
 
@@ -312,9 +330,20 @@ nav .toggle_icon {
     column-gap: 30px;
 }
 
-.food_item {}
+.food_item {
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
 
-.food_imgBox {}
+.food_imgBox {
+    height: 55%;
+    max-width: 100%;
+    background-color: #eee;
+    border-top-left-radius: 15px;
+
+}
 
 .food_content {}
 
