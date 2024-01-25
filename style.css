@@ -295,6 +295,12 @@ nav .toggle_icon {
 }
 
 /* food */
+.title {
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+}
+
 .food ul {
     display: flex;
     justify-content: center;
