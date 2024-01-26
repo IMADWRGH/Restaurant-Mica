@@ -408,3 +408,35 @@ nav .toggle_icon {
     margin: auto;
     margin-top: 30px;
 }
+
+/* about */
+.about {
+    background-color: var(--bg-color);
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 40px;
+}
+
+.about_imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_content .section_title {
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 30px
+}
+
+.about_content p {
+    margin-bottom: 30px;
+
+}
